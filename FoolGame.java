@@ -20,7 +20,7 @@ public class FoolGame extends JFrame
 		backColor = new Color(204,255,255);
 		panel.setBackground(backColor);
 		panel.setLayout(null);
-
+	        this.add(panel);
 		qFont = new Font("Georgia",Font.BOLD,30);
 		
 		qLabel = new JLabel("ARE YOU A FOOL?");
@@ -37,7 +37,9 @@ public class FoolGame extends JFrame
 		noBtn = new JButton("NO");
 		noBtn.setBounds(350,430,100,40);
 		panel.add(noBtn);
-		this.add(panel);
+		panel.setBackground(backColor);
+	       
+       
 
 	}
 }

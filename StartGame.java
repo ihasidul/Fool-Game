@@ -4,7 +4,7 @@ public class StartGame
 {
 	public static void main(String args[])
 	{
-		FoolGame fg = new FoolGame();
+		WellcomeGUI fg = new WellcomeGUI();
 		fg.setVisible(true);
 	
 	}

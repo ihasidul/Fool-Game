@@ -32,10 +32,7 @@ public class WellcomeGUI extends JFrame extends MouseListener, ActionListener
 		eBtn.setBackground(Color.GREEN);
 		eBtn.setFont (new Font("Georgia",Font.BOLD,40));
 		wPanel.add(eBtn);
-
-
-
-
+		
 
 	}
 }

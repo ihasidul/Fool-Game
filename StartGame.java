@@ -4,8 +4,8 @@ public class StartGame
 {
 	public static void main(String args[])
 	{
-		WellcomeGUI fg = new WellcomeGUI();
-		fg.setVisible(true);
+		WellcomeGUI w = new WellcomeGUI();
+		w.setVisible(true);
 	
 	}
 }

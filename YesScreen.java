@@ -20,10 +20,9 @@ public class YesScreen extends JFrame implements MouseListener
 		backColor = new Color(204,255,255);
 		panel.setBackground(backColor);
 		panel.setLayout(null);
-      	    
-		this.add(panel);
+      	this.add(panel);
 
-		yLabel = new JLabel(" You are a Fool!!!");
+		yLabel = new JLabel("You are a Fool!!!");
 		yLabel.setBounds(150,200,500,100);
 		yLabel.setBackground(new Color(204,255,255));
 		yLabel.setFont(new Font("Georgia",Font.BOLD,30));
@@ -44,12 +43,8 @@ public class YesScreen extends JFrame implements MouseListener
 		exitBtn.setFont (new Font("Georgia",Font.BOLD,30));
 		exitBtn.addMouseListener(this);
 		panel.add(exitBtn);
-
-
-	
-
-
 	}
+	
 	public void mouseClicked(MouseEvent me)
 	{
 		if(me.getSource() == againBtn)
@@ -64,8 +59,11 @@ public class YesScreen extends JFrame implements MouseListener
 		}
 		else{}
 	}
+	
 	public void mousePressed(MouseEvent me){}
+	
 	public void mouseReleased(MouseEvent me){}
+	
 	public void mouseEntered(MouseEvent me)
 	{
 		if(me.getSource() == againBtn)
@@ -80,6 +78,7 @@ public class YesScreen extends JFrame implements MouseListener
 		}
 		else{}
 	}
+	
 	public void mouseExited(MouseEvent me)
 	{
 		if(me.getSource() == againBtn)

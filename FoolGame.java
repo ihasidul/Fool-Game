@@ -6,11 +6,13 @@ import java.util.Random;
 
 public class FoolGame extends JFrame implements MouseListener, ActionListener
 {
-	private JLabel qLabel;
+	private JLabel qLabel,imgLabel;
 	private JButton yesBtn,noBtn;
 	private JPanel panel;
 	private Color backColor;
 	private Font qFont;
+	private ImageIcon img, backgroundImg;
+
 	
 	public FoolGame()
 	{
@@ -46,6 +48,11 @@ public class FoolGame extends JFrame implements MouseListener, ActionListener
 		noBtn.addActionListener(this);
 		panel.add(noBtn);
 		panel.setBackground(backColor);
+
+		img = new ImageIcon("think.jpeg");
+		imgLabel = new JLabel(img);
+		imgLabel.setBounds(220,120, 225, 225);
+		panel.add(imgLabel);
 	}
 
 	public void mouseClicked(MouseEvent me)
